@@ -45,7 +45,7 @@ function Playa({ startTime = 0, src = '', autoPlay = false, number = "", ...rest
     return (
         <div>
             <audio ref={audio} src={src} autoPlay={autoPlay} {...rest} onTimeUpdate={onChange} />
-            <button onClick={playPause} onContextMenu={onContextMenu} style={{ width: '100px', height: '100px' }}>
+            <button onClick={playPause} onContextMenu={onContextMenu} onDoubleClick={onContextMenu} style={{ width: '100px', height: '100px' }}>
                 <CircularProgressbarWithChildren value={progressPc * 100}>
                     <h1>{number}</h1>
                 </CircularProgressbarWithChildren>
