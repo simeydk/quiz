@@ -58,7 +58,7 @@ function Playa({ startTime = 0, src = '', autoPlay = false, num = "", onClick = 
             <audio ref={audio} src={src} autoPlay={autoPlay} {...rest} onTimeUpdate={onChange} />
             <button className = "player-button" onClick={playPause} onContextMenu={onContextMenu} onDoubleClick={onContextMenu} style={{ width: '100px', height: '100px' }}>
                 <CircularProgressbarWithChildren value={progressPc * 100} background style={{}}>
-                    <h2 className={`button-label ${audio.current.paused ? '' : 'playing'}`}>{num}</h2>
+                    <h2 className={`button-label ${(audio.current && !audio.current.paused) ? 'playing' : ''}`}>{num}</h2>
                     <div className="button-time">{`${currentTime.toFixed(0)}/${duration.toFixed(0)}`}</div>
                 </CircularProgressbarWithChildren>
             </button>

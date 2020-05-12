@@ -5,9 +5,14 @@
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    
+}
 
-    /* background-position: center; */
+.audio-title {
+    color: goldenrod;
+    align-self: center;
+    margin-top: 40px;
+    text-shadow: 3px 3px 3px firebrick;
+    transform: skewY(-5deg); 
 }
 
 .audio-page-bg-image {

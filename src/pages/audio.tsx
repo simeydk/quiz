@@ -11,6 +11,7 @@ const SecondPage = (props: PageProps) => {
 
   return (
     <div className="audio-page">
+      <h1 className="audio-title">What's your tune?</h1>
       <div className="audio-list" >
       {sources.map((src,i) => <div style={{fontSize: '14px'}}>
         <Playa src={src} num={i+1} autoPlay={i === playingNum} preload onClick={() => setPlayingNum(i)}/>
