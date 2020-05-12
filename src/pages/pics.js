@@ -29,14 +29,20 @@ const images = [
 function Page() {
     const [showModal, setShowModal] = useState(false)
     const [activeSlide, setActiveSlide] = useState(0)
+    const [maxSlide, setMaxSlide] = useState(0)
+
+    const setSlide = (n) => {
+        setMaxSlide(Math.max(maxSlide, n))
+        setActiveSlide(n)
+    }
 
     function clickThumb(i) {
         setShowModal(true);
-        setActiveSlide(i);
+        setSlide(i);
     }
 
     function changeSlide(i = 1) {
-        setActiveSlide((activeSlide + images.length + i) % images.length)
+        setSlide((activeSlide + images.length + i) % images.length)
     }
 
     const nextSlide = () => changeSlide(1)
@@ -65,7 +71,7 @@ function Page() {
             <div className="main">
                 <h1>Round 1</h1>
                 <div className="img-list">
-                    {images.map((img,i) => <button onClick={() => clickThumb(i)} className="img-thumb-box">
+                    {images.slice(0,maxSlide+1).map((img,i) => <button onClick={() => clickThumb(i)} className="img-thumb-box">
                         <img className="img-thumb" src={img} />
                         <h4 className="thumb-num">{i+1}</h4>
                     </button>)}
