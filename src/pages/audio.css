@@ -1,0 +1,43 @@
+.audio-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+
+    /* background-position: center; */
+}
+
+.audio-page-bg-image {
+    position: absolute;
+    z-index: -1;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background: url('https://unsplash.com/photos/Y20JJ_ddy9M/download?w=800'); */
+    background: url('https://unsplash.com/photos/5gn2soeAc40/download?w=800');
+    background: url('https://unsplash.com/photos/NcdG9mK3PBY/download?w=800');
+    background-size: cover;
+    background-position: bottom;
+    /* transform: scale(1.03); */
+    overflow:hidden;
+    filter: blur(2px);
+    overflow:none;
+    /* opacity: 0.5; */
+}
+
+.audio-list {
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 800px;
+    margin: 20px auto;
+
+
+    /* background: pink; */
+}

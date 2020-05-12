@@ -1,0 +1,28 @@
+/* // custom.css */
+.CircularProgressbar-path {
+  stroke: firebrick !important;
+}
+.CircularProgressbar-trail {
+  stroke: #dddd !important;
+}
+.CircularProgressbar-text {
+  fill: yellow;
+}
+.CircularProgressbar-background {
+  fill: #fffa !important;
+}
+
+.player-button {
+  border: none;
+  background: none;
+  margin: 5px;
+}
+
+.button-label {
+  margin: 0;
+}
+
+.button-time {
+  font-family: 'Segoe UI', Arial, 'Sans Serif';
+  font-size: 12px; 
+}

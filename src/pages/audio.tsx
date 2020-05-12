@@ -1,21 +1,21 @@
 // Gatsby supports TypeScript natively!
-import React from "react"
+import React, {useState} from "react"
 import { PageProps, Link } from "gatsby"
 
-import Layout from "../components/layout"
-
 import Playa from "../components/playa"
+import './audio.css'
 
 const SecondPage = (props: PageProps) => {
   const sources = getSources()
   return (
-  <Layout>
-    <div>
-    {sources.map((src,i) => <div style={{fontSize: '14px'}}>
-      <Playa src={src} number={i+1} preload />
-      </div>)}
+    <div className="audio-page">
+      <div className="audio-list" >
+      {sources.map((src,i) => <div style={{fontSize: '14px'}}>
+        <Playa src={src} num={i+1} preload />
+        </div>)}
+      </div>
+    <div className="audio-page-bg-image"></div>
     </div>
-  </Layout>
 )}
 
 function getSources() {

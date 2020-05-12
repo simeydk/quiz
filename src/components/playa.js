@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react"
 
-import { Circle } from '@tiaanduplessis/react-progressbar'
-
 import { CircularProgressbar, CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-function Playa({ startTime = 0, src = '', autoPlay = false, number = "", ...rest }) {
+import './playa.css'
+
+
+function Playa({ startTime = 0, src = '', autoPlay = false, num = "", ...rest }) {
     const audio = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
@@ -45,9 +46,10 @@ function Playa({ startTime = 0, src = '', autoPlay = false, number = "", ...rest
     return (
         <div>
             <audio ref={audio} src={src} autoPlay={autoPlay} {...rest} onTimeUpdate={onChange} />
-            <button onClick={playPause} onContextMenu={onContextMenu} onDoubleClick={onContextMenu} style={{ width: '100px', height: '100px' }}>
-                <CircularProgressbarWithChildren value={progressPc * 100}>
-                    <h1>{number}</h1>
+            <button className = "player-button" onClick={playPause} onContextMenu={onContextMenu} onDoubleClick={onContextMenu} style={{ width: '100px', height: '100px' }}>
+                <CircularProgressbarWithChildren value={progressPc * 100} background>
+                    <h2 className="button-label">{num}</h2>
+                    <div className="button-time">{`${currentTime.toFixed(0)}/${duration.toFixed(0)}`}</div>
                 </CircularProgressbarWithChildren>
             </button>
         </div>
