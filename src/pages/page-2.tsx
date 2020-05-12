@@ -10,6 +10,7 @@ const SecondPage = (props: PageProps) => (
     <SEO title="Page two" />
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2 ({props.path})</p>
+<pre>{JSON.stringify(props, null,2)}</pre>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
