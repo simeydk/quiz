@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import './pics.css'
 
@@ -27,15 +27,49 @@ const images = [
 ]
 
 function Page() {
-    return ( 
-    <div>
-        <h1>Round 1</h1>
-        <div className="img-list">
-            {images.map(img => <div className="img-thumb-box">
-                <img className="img-thumb" src={img} />
-            </div>)}
+    const [showModal, setShowModal] = useState(false)
+    const [activeSlide, setActiveSlide] = useState(0)
+
+    function clickThumb(i) {
+        setShowModal(true);
+        setActiveSlide(i);
+    }
+
+    function onKeyPress({key}) {
+        console.log(`pressed ${key}`)
+        if (key == 'Escape') {
+            setShowModal(false)
+        }
+        if (key == 'ArrowLeft') {
+            setActiveSlide((activeSlide + images.length - 1) % images.length)
+        }
+        if (key == 'ArrowRight') {
+            setActiveSlide((activeSlide + images.length + 1) % images.length)
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener('keydown', onKeyPress)
+        return () => document.removeEventListener('keydown',onKeyPress)
+    })
+
+    return (
+        <div className="page">
+            <div className="main">
+                <h1>Round 1</h1>
+                <div className="img-list">
+                    {images.map((img,i) => <button onClick={() => clickThumb(i)} className="img-thumb-box">
+                        <img className="img-thumb" src={img} />
+                        <h4 className="thumb-num">{i+1}</h4>
+                    </button>)}
+                </div>
+                <div className={"modal " + (showModal ? "" : "hidden")} >
+                    <img className="img-modal" src={images[activeSlide]} />
+                    <button className="modal-close" onClick={() => setShowModal(false)}>X</button>
+                </div>
+                
+            </div>
         </div>
-    </div>
     )
 }
 
