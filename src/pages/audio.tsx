@@ -7,11 +7,13 @@ import './audio.css'
 
 const SecondPage = (props: PageProps) => {
   const sources = getSources()
+  const [playingNum, setPlayingNum] = useState(-1)
+
   return (
     <div className="audio-page">
       <div className="audio-list" >
       {sources.map((src,i) => <div style={{fontSize: '14px'}}>
-        <Playa src={src} num={i+1} preload />
+        <Playa src={src} num={i+1} autoPlay={i === playingNum} preload onClick={() => setPlayingNum(i)}/>
         </div>)}
       </div>
     <div className="audio-page-bg-image"></div>

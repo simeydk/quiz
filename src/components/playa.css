@@ -26,3 +26,7 @@
   font-family: 'Segoe UI', Arial, 'Sans Serif';
   font-size: 12px; 
 }
+
+.playing {
+  color: firebrick;
+}
