@@ -35,16 +35,23 @@ function Page() {
         setActiveSlide(i);
     }
 
+    function changeSlide(i = 1) {
+        setActiveSlide((activeSlide + images.length + i) % images.length)
+    }
+
+    const nextSlide = () => changeSlide(1)
+    const prevSlide = () => changeSlide(1)
+
     function onKeyPress({key}) {
         console.log(`pressed ${key}`)
         if (key == 'Escape') {
             setShowModal(false)
         }
         if (key == 'ArrowLeft') {
-            setActiveSlide((activeSlide + images.length - 1) % images.length)
+            prevSlide()
         }
         if (key == 'ArrowRight') {
-            setActiveSlide((activeSlide + images.length + 1) % images.length)
+            nextSlide()
         }
     }
 
@@ -66,6 +73,9 @@ function Page() {
                 <div className={"modal " + (showModal ? "" : "hidden")} >
                     <img className="img-modal" src={images[activeSlide]} />
                     <button className="modal-close" onClick={() => setShowModal(false)}>X</button>
+                    <button className="modal-left" onClick={prevSlide}>{"<"}</button>
+                    <button className="modal-right" onClick={nextSlide}>{">"}</button>
+                    <h4 className="modal-num">{activeSlide+1}</h4>
                 </div>
                 
             </div>
