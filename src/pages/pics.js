@@ -45,8 +45,8 @@ function Page() {
         setSlide((activeSlide + images.length + i) % images.length)
     }
 
-    const nextSlide = () => changeSlide(1)
-    const prevSlide = () => changeSlide(1)
+    const nextSlide = () => changeSlide(+1)
+    const prevSlide = () => changeSlide(-1)
 
     function onKeyPress({key}) {
         console.log(`pressed ${key}`)
