@@ -21,7 +21,8 @@ export function QuestionPage({ questions, title="Gallery", subtitle="images" }) 
     }
     const nextSlide = () => changeSlide(+1);
     const prevSlide = () => changeSlide(-1);
-    function onKeyPress({ key }) {
+    function onKeyPress(e) {
+        const {key} = e
         console.log(`pressed ${key}`);
         if (key == 'Escape') {
             setShowModal(false);
@@ -33,6 +34,7 @@ export function QuestionPage({ questions, title="Gallery", subtitle="images" }) 
             nextSlide();
         }
         if (key == ' ') {
+            e.preventDefault()
             if (showModal) {
                 if (activeSlide >= (questions.length-1)) {
                     setShowModal(false)
