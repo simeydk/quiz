@@ -19,7 +19,8 @@ export function GalleryPage({ images, title="Gallery", subtitle="images" }) {
     }
     const nextSlide = () => changeSlide(+1);
     const prevSlide = () => changeSlide(-1);
-    function onKeyPress({ key }) {
+    function onKeyPress(e) {
+        const {key} = e
         console.log(`pressed ${key}`);
         if (key == 'Escape') {
             setShowModal(false);
@@ -29,6 +30,18 @@ export function GalleryPage({ images, title="Gallery", subtitle="images" }) {
         }
         if (key == 'ArrowRight') {
             nextSlide();
+        }
+        if (key == ' ') {
+            e.preventDefault()
+            if (showModal) {
+                if (activeSlide >= (images.length-1)) {
+                    setShowModal(false)
+                } 
+                nextSlide()
+            } else {
+                setSlide(Math.max(activeSlide,0))
+                setShowModal(true)
+            }
         }
     }
     useEffect(() => {

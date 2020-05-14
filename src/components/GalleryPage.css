@@ -71,14 +71,15 @@
     padding: 20px;
     display:flex;
     overflow:hidden;
-    background: #0008
+    background: #0008;
+    max-height: 100vh;
 }
 
 .img-modal {
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
     background: white;
-
+    max-height: 90vh;
 }
 
 .modal-close {
