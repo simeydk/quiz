@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: goldenrod;
+}
+.home-button {
+    text-decoration: none;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+}
+
+.home-button:hover {
+    color: goldenrod;
+}

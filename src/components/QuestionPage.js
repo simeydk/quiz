@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
 import './QuestionPage.css'
-
-
+import { HomeButton } from './HomeButton';
 
 export function QuestionPage({ questions, title = "Gallery", subtitle = "images" }) {
     const [showModal, setShowModal] = useState(false);
@@ -57,6 +55,7 @@ export function QuestionPage({ questions, title = "Gallery", subtitle = "images"
         return () => document.removeEventListener('keydown', onKeyPress);
     });
     return (<div className="page">
+        <HomeButton />
         <div className="main">
             <h1>{title}</h1>
             <h4>{subtitle}</h4>

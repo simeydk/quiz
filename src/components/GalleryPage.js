@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 import './GalleryPage.css'
+import { HomeButton } from './HomeButton';
+
+const loadSrc = src => {
+    const img = new Image();
+    img.src = src;
+  };
 
 export function GalleryPage({ images, title="Gallery", subtitle="images" }) {
     const [showModal, setShowModal] = useState(false);
@@ -48,7 +54,11 @@ export function GalleryPage({ images, title="Gallery", subtitle="images" }) {
         document.addEventListener('keydown', onKeyPress);
         return () => document.removeEventListener('keydown', onKeyPress);
     });
+    useEffect(() => {
+        images.forEach(loadSrc)
+    },[])
     return (<div className="page">
+        <HomeButton />
         <div className="main">
             <h1>{title}</h1>
             <h4>{subtitle}</h4>

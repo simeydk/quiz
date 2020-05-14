@@ -1,13 +1,14 @@
 import {Link } from "gatsby"
 import React, { useState, useEffect } from 'react';
 import './index.css'
+import { HomeButton } from "../components/HomeButton";
 
 
 
 export function Page() {
 
     return (<div className="page">
-        <button></button>
+        <HomeButton />
         <div className="main">
             <h1>Let's get quizzical</h1>
             <h4>15 May 2020</h4>
