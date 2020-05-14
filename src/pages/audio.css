@@ -15,6 +15,13 @@
     transform: skewY(-5deg); 
 }
 
+.audio-subtitle {
+    color: goldenrod;
+    align-self: center;
+    text-shadow: 2px 2px 3px black;
+    font-style: italic;
+}
+
 .audio-page-bg-image {
     position: absolute;
     z-index: -1;

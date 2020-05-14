@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState, useCallback } from "react"
 
-import { CircularProgressbar, CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import {CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 import './playa.css'
@@ -55,7 +55,7 @@ function Playa({ startTime = 0, src = '', autoPlay = false, num = "", onClick = 
 
     return (
         <div>
-            <audio ref={audio} src={src} autoPlay={autoPlay} {...rest} onTimeUpdate={onChange} />
+            <audio ref={audio} src={src} autoPlay={autoPlay} {...rest} onTimeUpdate={onChange} onCanPlay={onChange} />
             <button className = "player-button" onClick={playPause} onContextMenu={onContextMenu} onDoubleClick={onContextMenu} style={{ width: '100px', height: '100px' }}>
                 <CircularProgressbarWithChildren value={progressPc * 100} background style={{}}>
                     <h2 className={`button-label ${(audio.current && !audio.current.paused) ? 'playing' : ''}`}>{num}</h2>
