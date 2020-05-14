@@ -4,6 +4,7 @@ import { PageProps, Link } from "gatsby"
 
 import Playa from "../components/playa"
 import './audio.css'
+import { HomeButton } from "../components/HomeButton"
 
 const SecondPage = (props: PageProps) => {
   const sources = getSources()
@@ -11,6 +12,7 @@ const SecondPage = (props: PageProps) => {
 
   return (
     <div className="audio-page">
+      <HomeButton />
       <h1 className="audio-title">What's your tune?</h1>
       <h4 className="audio-subtitle">Name the artist and song title</h4>
       <div className="audio-list" >
