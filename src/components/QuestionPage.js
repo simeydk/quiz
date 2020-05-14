@@ -21,6 +21,12 @@ export function QuestionPage({ questions, title="Gallery", subtitle="images" }) 
     }
     const nextSlide = () => changeSlide(+1);
     const prevSlide = () => changeSlide(-1);
+
+    const onStart = () => {
+        setSlide(Math.max(activeSlide,0))
+        setShowModal(true)
+    } 
+
     function onKeyPress(e) {
         const {key} = e
         console.log(`pressed ${key}`);
@@ -54,6 +60,7 @@ export function QuestionPage({ questions, title="Gallery", subtitle="images" }) 
         <div className="main">
             <h1>{title}</h1>
             <h4>{subtitle}</h4>
+            {maxSlide<0 ? <button className="start-button" onClick={onStart}><h3>start</h3></button>:''}
             <div className="question-list">
                 {questions.slice(0, maxSlide + 1).map((question, i) => <button onClick={() => clickThumb(i)} className="question-box">
                 <div className="num-box">

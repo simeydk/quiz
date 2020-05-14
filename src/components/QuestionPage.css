@@ -23,6 +23,23 @@
     align-items: center;
 }
 
+.start-button {
+    background:none;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 2px;
+}
+.start-button h3 {
+    margin: 2px 4px;
+    padding: 0;
+}
+
+.start-button:hover {
+    border-color: goldenrod;
+}
+
+
+
 .question-list {
     /* display: flex; */
     flex-direction: column;
