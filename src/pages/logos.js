@@ -22,6 +22,10 @@ import img07 from '../images/logos/07 anchor.jpg'
 import img08 from '../images/logos/08 boats.png'
 import img09 from '../images/logos/09 badge.png'
 import img10 from '../images/logos/10 nest.jpg'
+import img11 from '../images/logos/11 u.jpg'
+import img12 from '../images/logos/12 arab.svg'
+import img13 from '../images/logos/13 letters.png'
+import img14 from '../images/logos/14 disc.jpg'
 
 const images = [
     img01,
@@ -29,11 +33,15 @@ const images = [
     // img03,
     img04,
     // img05,
-    img06,
-    img07,
-    img08,
+    // img06,
+    // img07,
+    // img08,
     // img09,
     img10,
+    img11,
+    img12,
+    img13,
+    img14,
 ]
 
 export default () => <GalleryPage 
