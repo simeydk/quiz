@@ -3,7 +3,7 @@
 	<channel>
 		<title>Blindemol</title>
 		<pubDate>Wed, 13 May 2020 17:00:00 +0000</pubDate>
-		<lastBuildDate>Sat, 16 May 2020 17:03:13 +0000</lastBuildDate>
+		<lastBuildDate>2020/05/17 15:15 +0000</lastBuildDate>
 		<language>af</language>
 		<image>
 			<url>https://www.sabc.co.za/sabc/wp-content/uploads/2017/08/rsg-fm-1024x538.jpg</url>
@@ -15,8 +15,7 @@
 			<itunes:title>Blindemol</itunes:title>
 			<duration>44:03</duration>
 			<itunes:duration>44:02</itunes:duration>
-			<pubDate>Wed, 13 May 2020 17:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[ccf14835-361d-44da-961f-a6a6599bf111]]></guid>
+			<pubDate>Sun, 17 May 2020 15:00:00 +0000</pubDate>
 			<enclosure type="audio/mpeg" url="http://www.rsg.co.za/images/upload/sound/klanke/20151229_RADIOTEATER_BLINDEMOL.mp3" />
 		</item>
 	</channel>
