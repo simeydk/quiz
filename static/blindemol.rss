@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<channel>
+		<title>Blindemol</title>
+		<pubDate>Wed, 13 May 2020 17:00:00 +0000</pubDate>
+		<lastBuildDate>Sat, 16 May 2020 17:03:13 +0000</lastBuildDate>
+		<language>af</language>
+		<image>
+			<url>https://f.jwwb.nl/public/p/c/o/temp-tafkmrgopywxnvnxqbkv/download4-20.jpg</url>
+			<title>Blindemol</title>
+		</image>
+				
+		<item>
+			<title>Blindemol</title>
+			<itunes:title>Blindemol</itunes:title>
+			<pubDate>Wed, 13 May 2020 17:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[ccf14835-361d-44da-961f-a6a6599bf111]]></guid>
+			<enclosure type="audio/mpeg" url="http://www.rsg.co.za/images/upload/sound/klanke/20151229_RADIOTEATER_BLINDEMOL.mp3" />
+		</item>
+	</channel>
+</rss>
