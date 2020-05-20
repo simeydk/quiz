@@ -1,6 +1,9 @@
 * {
-    color: black;
-    background: #500;
+    background: black;
+}
+mega {
+    /* color: black; */
+    background: darkslategray;
 }
 
 p, p * {
@@ -22,6 +25,7 @@ p, p * {
     margin: 0.5em;
     padding: 0.5em 1em;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .vert-list {
@@ -39,6 +43,20 @@ p, p * {
     background: goldenrod;
 }
 
+.whatsapp {
+    background: white;
+    color: black;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Cascadia Code', monospace;
+    margin: 10px;
+    border-radius: 10px;
+}
+
 li {
     /* color: black; */
 }
@@ -46,4 +64,14 @@ li {
 .answer {
     font-family: 'Arial', 'Sans Serif';
     color: pink;
+}
+
+.pretty, .pretty * {
+    background: lightgoldenrodyellow;
+    color: #110c;
+}
+.pretty {
+    padding: 20px 40px;
+    margin: 10px;
+    border-radius: 10px;
 }
