@@ -1,3 +1,49 @@
 * {
     color: black;
+    background: #500;
+}
+
+p, p * {
+    /* color: black; */
+}
+
+.round-button-list {
+    padding: 5px;
+    display:flex;
+    overflow-x: scroll;
+    /* border: 1px solid #fff6; */
+    margin: 5px;
+    background: #0005;
+}
+
+.round-button {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+.vert-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    margin-bottom: 0;
+
+}
+
+.copy-button {
+    /* display:flex; */
+    background: goldenrod;
+}
+
+li {
+    /* color: black; */
+}
+
+.answer {
+    font-family: 'Arial', 'Sans Serif';
+    color: pink;
 }
