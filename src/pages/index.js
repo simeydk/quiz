@@ -11,7 +11,7 @@ export function Page() {
         <HomeButton />
         <div className="main">
             <h1>Let's get quizzical</h1>
-            <h4>15 May 2020</h4>
+            <h4>Farewell Reggie!</h4>
             <Link to="/q1"><h3>Round 1</h3></Link>
             <Link to="/pics"><h3>Pictorial 1</h3></Link>
             <Link to="/q2"><h3>Round 2</h3></Link>
