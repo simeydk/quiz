@@ -9,11 +9,12 @@ const questions = [
     `What is the Botswana's currency called? (Bonus point: what does the word mean?)`,
     `Who is the current Springbok coach?`,
     `Who won the men's singles title in the 2020 Australian Open tennis?`,
-    `Name the young South African who became the world's youngest record holder (of any sport in any country) at the age of 12 in 1965?`,
+    `Who currently holds the record for the highest total runs scored in Test Cricket?`,
+    `Which English Premier League football team was nicknamed the Invincibles after completing a season unbeaten?`
 ]
 
 export default () => <QuestionPage 
     questions={questions}
     title={"Round 3"}
-    subtitle={"Geo + WhoAmI"}    
+    subtitle={"Geo + Sport"}    
     />
