@@ -48,6 +48,8 @@ function getSources() {
     // "/assets/audio/named/3 Doors Down - Kryptonite (Official Video)-xPU8OAjjS4k.mp3",
     "/assets/audio/named/AC_DC - Back In Black (Official Video)-pAgnJDJN4VA.mp3",
     "/assets/audio/named/Beethoven - Für Elise _ Piano Version-_mVW8tgGY_w.mp3",
+    "/assets/audio/named/PSY - GANGNAM STYLE(강남스타일) M_V-9bZkp7q19f0.mp3",
+    "/assets/audio/named/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3",
     "/assets/audio/named/Daft Punk - Get Lucky (Official Audio) ft. Pharrell Williams, Nile Rodgers-5NV6Rdv1a3I.mp3",
     // "/assets/audio/named/Dire Straits - Money For Nothing-wTP2RUD_cL0.mp3",
     "/assets/audio/named/FROZEN _ Let It Go Sing-along _ Official Disney UK-L0MK7qz13bU.mp3",
