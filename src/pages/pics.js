@@ -13,20 +13,33 @@ import img09 from '../images/faces/09 Lock Stock.jpg'
 import img10 from '../images/faces/10 Skylord, Parks and Rec.jpg'
 
 const images = [
-    img03,
-    img01,
-    img02,
-    // img04,
-    img05,
-    // img06,
-    img07,
-    // img08,
-    img09,
-    img10,
+    'https://www.worldometers.info/img/flags/br-flag.gif',
+    'https://www.worldometers.info/img/flags/iv-flag.gif',
+    'https://www.worldometers.info/img/flags/ei-flag.gif',
+    'https://www.worldometers.info/img/flags/mz-flag.gif',
+    'https://www.worldometers.info/img/flags/ni-flag.gif',
+    'https://www.worldometers.info/img/flags/no-flag.gif',
+    'https://www.worldometers.info/img/flags/mi-flag.gif',
+    'https://www.worldometers.info/img/flags/au-flag.gif',
+    'https://www.worldometers.info/img/flags/vm-flag.gif',
+    'https://www.worldometers.info/img/flags/ri-flag.gif',
 ]
+
+// const images = [
+//     img03,
+//     img01,
+//     img02,
+//     // img04,
+//     img05,
+//     // img06,
+//     img07,
+//     // img08,
+//     img09,
+//     img10,
+// ]
 
 export default () => <GalleryPage 
     images={images}
-    title={"Look ma, I'm on TV!"}
-    subtitle={"Name the actor/actress"}    
+    title={"I need to flag an issue"}
+    subtitle={"(just smile and wave)"}    
     />
