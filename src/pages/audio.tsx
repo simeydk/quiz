@@ -41,11 +41,11 @@ function getSources() {
   return [
 
     "/assets/audio/named/Lynyrd Skynyrd - Sweet Home Alabama-ye5BuYf8q4o.mp3",
-    "/assets/audio/named/Piekniek oppi Maan-1XtoFgONNYI.mp3",
+    // "/assets/audio/named/Piekniek oppi Maan-1XtoFgONNYI.mp3",
     // "/assets/audio/named/Schindler's List Soundtrack-XNSsv86lsok.mp3",
     "/assets/audio/named/The Weeknd - Blinding Lights (Official Audio)-fHI8X4OXluQ.mp3",
     // "/assets/audio/named/Welcome To New York-RfjPHmgBPF0.mp3",
-    "/assets/audio/named/3 Doors Down - Kryptonite (Official Video)-xPU8OAjjS4k.mp3",
+    // "/assets/audio/named/3 Doors Down - Kryptonite (Official Video)-xPU8OAjjS4k.mp3",
     "/assets/audio/named/AC_DC - Back In Black (Official Video)-pAgnJDJN4VA.mp3",
     "/assets/audio/named/Beethoven - Für Elise _ Piano Version-_mVW8tgGY_w.mp3",
     "/assets/audio/named/Daft Punk - Get Lucky (Official Audio) ft. Pharrell Williams, Nile Rodgers-5NV6Rdv1a3I.mp3",
